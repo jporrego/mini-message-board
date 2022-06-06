@@ -9,25 +9,29 @@
 </head>
 
 <body>
-  <h1>
-    <%= title %>
-  </h1>
-  <a href="/new">New Message</a>
-  <ul>
-    <% for (const msg of messages) { %>
-      <li>
-        <div class="user">
-          <%= msg.user %>
-        </div>
-        <div class="message">
-          <%= msg.text %>
-        </div>
-        <div class="date">
-          <%= format(msg.added, {addSuffix: true}) %>
-        </div>
-      </li>
-      <% } %>
-  </ul>
+  <div class="title">
+    <h1>
+      <%= title %>
+    </h1>
+    <a href="/new">New Message</a>
+  </div>
+  <div class="messages-container">
+    <ul>
+      <% for (const msg of messages) { %>
+        <li>
+          <div class="user">
+            <%= msg.user %>
+          </div>
+          <div class="message">
+            <%= msg.text %>
+          </div>
+          <div class="date">
+            <%= format(msg.added, {addSuffix: true}) %>
+          </div>
+        </li>
+        <% } %>
+    </ul>
+  </div>
 </body>
 
 </html>
