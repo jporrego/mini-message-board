@@ -112,6 +112,8 @@ input {
   padding: .25rem .5rem;
   border-radius: .5rem;
   margin: .5rem 0rem;
+  font-weight: 600;
+  font-size: .75rem;
 }
 
 textarea {
@@ -121,6 +123,8 @@ textarea {
   padding: .25rem .5rem;
   border-radius: .5rem;
   margin: .5rem 0rem;
+  font-weight: 600;
+  font-size: .75rem;
 }
 
 button {
