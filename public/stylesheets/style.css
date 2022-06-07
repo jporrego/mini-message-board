@@ -15,6 +15,7 @@ body {
 .messages-container {
   background-color: #191e3e;
   padding: 1rem;
+  border-radius: 0rem 1rem 1rem 1rem;
 }
 
 a, a:link, a:visited, a:active {
@@ -47,10 +48,19 @@ li {
   list-style: none;
   background-color: #273059;
   margin-bottom: 1rem;
-  padding: 1rem;
+  padding: 1rem 1rem;
   width: fit-content;
   border-radius: 0rem 1rem 1rem 1rem;
   max-width: 250px;
+  user-select: none;
+  cursor: pointer;
+  transition: all .15s ease-out;
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, .2);
+}
+
+li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, .1);
 }
 
 .user {
@@ -66,6 +76,10 @@ li {
   color: #e2e3ee;
 }
 
+.message::first-letter {
+  text-transform: capitalize;
+}
+
 .date {
   font-size: 1em;
   color: #666f9a;
@@ -74,4 +88,53 @@ li {
 
 .date:first-letter {
   text-transform: capitalize;
+}
+
+/* ----- FORM ----- */
+
+form {
+  color: #e2e3ee;
+  max-width: 200px;
+  font-size: 1.1em;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: .5rem;
+  font-weight: 600;
+}
+
+input {
+  background-color: #273059;
+  color: #e2e3ee;
+  border: none;
+  padding: .25rem .5rem;
+  border-radius: .5rem;
+  margin: .5rem 0rem;
+}
+
+textarea {
+  background-color: #273059;
+  color: #e2e3ee;
+  border: none;
+  padding: .25rem .5rem;
+  border-radius: .5rem;
+  margin: .5rem 0rem;
+}
+
+button {
+  background-color: #273059;
+  color: #6371ec;
+  border: none;
+  padding: .25rem .5rem;
+  font-weight: 600;
+  font-size: inherit;
+  border-radius: .5rem;
+  cursor: pointer;
+  transition: all .1s ease-out;
+}
+
+button:hover {
+  transform: translateX(1px);
 }
