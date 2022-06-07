@@ -4,7 +4,7 @@ const distanceInWords = require("date-fns/formatDistanceToNow");
 
 const messages = [
   {
-    text: "Hi there! asd asd asd asd asda sdas d",
+    text: "Hi there!",
     user: "Amando",
     added: new Date(),
   },
